@@ -9,52 +9,173 @@
 
 
   <div class="container">
+    <div class="row">
+    <div class="col-lg-8 panel panel-default" name="sortiment_container">
+      <!-- <h2 text-align="center">Verfügbare Pizzen:</h2> -->
 
-      <h2>Verfügbare Pizzen:</h2>
-
-      <div class="pizzaElement rounded">
-          <h4>Pizza Roquette</h4>
-          Salami, Teig, Käse <br>
-          <img src="img/pz_roquette.jpg" alt="Pizza Roquette" class="rounded">
-          <h4>Preis: 5,00€</h4>
+      <div class="row" style="padding-top: 20px;">
+        <div padding="10px" class="col-lg-4 col-md-6">
+        <div class="pizzaElement panel panel-primary">
+            <h4>Pizza Roquette</h4>
+            Salami, Teig, Käse <br>
+            <img src="img/pz_roquette.jpg" alt="Pizza Roquette" class="img-thumbnail">
+            <h4>Preis: 5,00€</h4>
+            <div class="btn-group btn-group-lg">
+            <button type="button" class="btn btn-primary">-</button>
+            <input type="number" value="0"  class="btn btn-primary" style="width: 80px;" maxLength="2"></button>
+            <button type="button" class="btn btn-primary">+</button>
+          </div>
+            <br>
+        </div>
       </div>
 
-      <div class="pizzaElement rounded">
-          <h4>Pizza Hot Pepper</h4>
-          Salami, Teig, Käse, Chilli <br>
-          <img src="img/pz_hot-pepper.jpg" alt="Pizza Roquette" class="rounded">
-          <h4>Preis: 6,00€</h4>
-      </div>
+<div padding="10px" class="col-lg-4 col-md-6">
+        <div class="pizzaElement panel panel-primary">
+            <h4>Pizza Hot Pepper</h4>
+            Salami, Teig, Käse, Chilli <br>
+            <img src="img/pz_hot-pepper.jpg" alt="Pizza Hot Pepper" class="img-thumbnail">
+            <h4>Preis: 6,00€</h4>
+            <div class="btn-group btn-group-lg">
+            <button type="button" class="btn btn-primary">-</button>
+            <input type="number" value="0"  class="btn btn-primary" style="width: 80px;" maxLength="2"></button>
+            <button type="button" class="btn btn-primary">+</button>
+          </div>
+          </div>
+        </div>
 
-      <div class="pizzaElement rounded">
+<div padding="10px" class="col-lg-4 col-md-6">
+      <div class="pizzaElement panel panel-primary">
           <h4>Pizza Schinken</h4>
           Schinken, Teig, Käse <br>
-          <img src="img/pz_ham.jpg" alt="Pizza Roquette" class="rounded">
+          <img src="img/pz_ham.jpg" alt="Pizza Schinken" class="img-thumbnail">
           <h4>Preis: 5,00€</h4>
+          <div class="btn-group btn-group-lg">
+          <button type="button" class="btn btn-primary">-</button>
+          <input type="number" value="0"  class="btn btn-primary" style="width: 80px;" maxLength="2"></button>
+          <button type="button" class="btn btn-primary">+</button>
+        </div>
       </div>
-
-      <div class="pizzaElement rounded">
+      </div>
+  <div padding="10px" class="col-lg-4 col-md-6">
+      <div class="pizzaElement panel panel-primary">
           <h4>Pizza Vier Jahreszeiten</h4>
           Salami, Teig, Käse, Artischocken <br>
-          <img src="img/pz_four-seasons.jpg" alt="Pizza Roquette" class="rounded">
+          <img src="img/pz_four-seasons.jpg" alt="Pizza Roquette" class="img-thumbnail">
           <h4>Preis: 7,00€</h4>
+          <div class="btn-group btn-group-lg">
+          <button type="button" class="btn btn-primary">-</button>
+          <input type="number" value="0"  class="btn btn-primary" style="width: 80px;" maxLength="2"></button>
+          <button type="button" class="btn btn-primary">+</button>
+        </div>
+      </div>
       </div>
 
-      <div class="pizzaElement rounded">
+<div padding="10px" class="col-lg-4 col-md-6">
+      <div class="pizzaElement panel panel-primary">
           <h4>Pizza Kaviar</h4>
           Tomate, Teig, Käse, Kaviar <br>
-          <img src="img/pz_caviar.jpg" alt="Pizza Roquette" class="rounded">
+          <img src="img/pz_caviar.jpg" alt="Pizza Roquette" class="img-thumbnail">
           <h4>Preis: 10,00€</h4>
+          <div class="btn-group btn-group-lg">
+          <button type="button" class="btn btn-primary">-</button>
+          <input type="number" value="0"  class="btn btn-primary" style="width: 80px;" maxLength="2"></button>
+          <button type="button" class="btn btn-primary">+</button>
+        </div>
       </div>
+    </div>
 
-      <div class="pizzaElement rounded">
+<div padding="10px" class="col-lg-4 col-md-6">
+      <div class="pizzaElement panel panel-primary">
           <h4>Pizzabrot</h4>
           Teig, Tomatensose <br>
-          <img src="img/pz_bread.jpg" alt="Pizza Roquette" class="rounded">
+          <img src="img/pz_bread.jpg" alt="Pizza Roquette" class="img-thumbnail">
           <h4>Preis: 3,00€</h4>
+          <div class="btn-group btn-group-lg">
+          <button type="button" class="btn btn-primary">-</button>
+          <input type="number" value="0"  class="btn btn-primary" style="width: 80px;" maxLength="2"></button>
+          <button type="button" class="btn btn-primary">+</button>
+        </div>
       </div>
-
+      </div>
+</div>
   </div>
+  <div id="warenkorb" class="col-lg-4 paddingWarenkorb">
+  <div class="panel panel-success" name="shopping-cart_container">
+    <div class="panel-heading">Warenkorb</div>
+    <div class="panel-body">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Bild</th>
+            <th>Pizza</th>
+            <th>Anzahl</th>
+            <th>Postenpreis</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+          <td><img src="img/pz_bread.jpg" alt="Pizza Roquette" class="img-thumbnail" width="80px" height="80px"></td>
+          <td>Pizzabrot</td>
+          <td>2</td>
+          <td>5,00 &euro;</td>
+        </tr>
+
+        <tr>
+        <td><img src="img/pz_caviar.jpg" alt="Pizza Roquette" class="img-thumbnail" width="80px" height="80px"></td>
+        <td>Pizza Kaviar</td>
+        <td>1</td>
+        <td>10 &euro;</td>
+      </tr>
+
+      <tr>
+      <td><img src="img/pz_ham.jpg" alt="Pizza Schinken" class="img-thumbnail" width="80px" height="80px"></td>
+      <td>Pizza Schinken</td>
+      <td>1</td>
+      <td>5,00 &euro;</td>
+    </tr>
+        </tbody>
+
+        <tfoot>
+          <tr>
+          <td colspan="3"> Gesamtpreis</td>
+          <td>32,00 &euro;</td>
+        </tr>
+        </tfoot>
+      </table>
+
+      <form>
+<div class="form-group">
+  <label for="text">Name:</label>
+  <input type="name" class="form-control" id="name">
+</div>
+<div class="form-group">
+  <label for="text">Straße und Hausnummer:</label>
+  <input type="text" class="form-control" id="strasse">
+</div>
+<div class="form-group">
+  <label for="number">Postleitzahl:</label>
+  <input type="number" class="form-control" id="plz">
+</div>
+<div class="form-group">
+  <label for="text">Ort:</label>
+  <input type="text" class="form-control" id="ort">
+</div>
+<div class="form-group">
+  <label for="text">Anmerkunden zur Bestellung:</label>
+  <input type="text" class="form-control" id="pwd">
+</div>
+<div class="checkbox">
+  <label><input type="checkbox"> Bestellbestätigung per E-Mail schicken</label>
+</div>
+<button type="submit" class="btn btn-primary">Abschicken</button>
+<button type="reset" class="btn btn-default">Zurücksetzen</button>
+</form>
+    </div>
+  </div>
+</div>
+</div>
+</div>
 
   <!--#include file="partials/_footer.html" -->
 </body>
